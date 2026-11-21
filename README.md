@@ -45,20 +45,21 @@ These describe implemented development work and code-review efforts. They are no
 
 ## Architecture Overview
 
-```text
-       React + Vite Frontend
-                |
-                | API Requests
-                v
-          FastAPI Backend
-                |
-        Authentication & RBAC
-                |
-                v
-           PostgreSQL
-                |
-           SQLAlchemy
-```
+
+flowchart TD
+    A["React + Vite Frontend"]
+    B["FastAPI Backend"]
+    C["Authentication & Session Validation"]
+    D["Role-Based Access Control (RBAC)"]
+    E["SQLAlchemy ORM"]
+    F[("PostgreSQL Database")]
+
+    A -->|"API Requests"| B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
 
 ## My Contribution
 
