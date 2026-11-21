@@ -46,6 +46,7 @@ These describe implemented development work and code-review efforts. They are no
 ## Architecture Overview
 
 
+```mermaid
 flowchart TD
     A["React + Vite Frontend"]
     B["FastAPI Backend"]
@@ -59,7 +60,7 @@ flowchart TD
     C --> D
     D --> E
     E --> F
-
+```
 
 ## My Contribution
 
